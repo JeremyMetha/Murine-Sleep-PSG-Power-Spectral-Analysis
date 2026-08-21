@@ -9,9 +9,9 @@ The methodologies executed in this code support the analyses described in our me
 High-resolution PSG recordings (e.g., 4-second epochs over 22+ hours) generate massive datasets. Traditional in-memory R workflows often bottleneck modern laptops[cite: 5]. This pipeline leverages **Apache Arrow** and partitioned Parquet datasets to perform "out-of-core" data processing. By keeping memory usage strictly constrained, this pipeline allows for complex, parallelized mixed-effects modeling across hundreds of frequency bands on standard desktop hardware.
 
 The pipeline is split into three modular scripts:
-1.  `01_preprocess_arrow_partitioned.R`: Cleans raw output, removes AC artifacts, normalizes power per epoch, and writes data to disk.
-2.  `02_modeling_arrow_unified.R`: Lazily loads target data into a parallel cluster and fits `lme4` mixed-effects models.
-3.  `03_unified_heatmaps.R`: Generates relative power spectral heatmaps with significance contours and vigilance bout plots.
+1.  `local preprocessing.R`: Cleans raw output, removes AC artifacts, normalizes power per epoch, and writes data to disk.
+2.  `local modelling.R`: Lazily loads target data into a parallel cluster and fits `lme4` mixed-effects models.
+3.  `Local vis.R`: Generates relative power spectral heatmaps with significance contours and vigilance bout plots.
 
 ## Data Naming Convention
 

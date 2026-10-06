@@ -2,7 +2,7 @@
 
 This repository contains the R-based data processing and statistical modeling pipeline for analyzing laboratory rodent polysomnography (PSG) and quantitative EEG (qEEG) data. 
 
-The methodologies executed in this code support the analyses described in our methods paper: *Laboratory Rodent Polysomnography and the Discovery of Hypnotic Orexin Receptor Antagonists: Methodological Considerations and Approaches* (Jacobson, Metha, et al.).
+The methodologies executed in this code support the analyses described in our methods paper: *Laboratory Rodent Polysomnography and the Discovery of Hypnotic Orexin Receptor Antagonists: Methodological Considerations and Approaches* (Metha, et al.).
 
 ## Overview
 
